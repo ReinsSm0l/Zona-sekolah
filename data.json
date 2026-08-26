@@ -1,0 +1,189 @@
+{
+  "SMA": [
+    {
+      "nama": "SMK Negeri 1 Karangjambu",
+      "kecamatan": "Karangjambu",
+      "lat": -7.2025388976719755,
+      "lng": 109.39423895833373,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Karangjambu",
+      "foto": "img/SMK N 1 Karangjambu.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Kutasari",
+      "kecamatan": "Kutasari",
+      "lat": -7.340381912439404,
+      "lng": 109.30898031823719,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Kutasari",
+      "foto": "img/SMA Negeri 1 Kutasari.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Purbalingga",
+      "kecamatan": "Kalimanah",
+      "lat": -7.403358274512752,
+      "lng": 109.34700525833671,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Purbalingga",
+      "foto": "img/SMK Negeri 1 Purbalingga.jpg"
+    },
+    {
+      "nama": "SMA Negeri 2 Purbalingga",
+      "kecamatan": "Purbalingga",
+      "lat": -7.393707583140337,
+      "lng": 109.37587473369138,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+2+Purbalingga",
+      "foto": "img/SMA Negeri 2 Purbalingga.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Kemangkon",
+      "kecamatan": "Kemangkon",
+      "lat": -7.443766810305452,
+      "lng": 109.38942644450252,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Kemangkon",
+      "foto": "img/SMA Negeri 1 Kemangkon.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Purbalingga",
+      "kecamatan": "Purbalingga",
+      "lat": -7.386864939817996,
+      "lng": 109.35235694903287,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Purbalingga",
+      "foto": "img/SMA Negeri 1 Purbalingga.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Bukateja",
+      "kecamatan": "Bukateja",
+      "lat": -7.426720110170448,
+      "lng": 109.42416289321048,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Bukateja",
+      "foto": "img/SMA Negeri 1 Bukateja.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Bukateja",
+      "kecamatan": "Bukateja",
+      "lat": -7.426560493619129,
+      "lng": 109.42309382204579,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Bukateja",
+      "foto": "img/SMK Negeri 1 Bukateja.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Kemangkon",
+      "kecamatan": "Kemangkon",
+      "lat": -7.456963235427184,
+      "lng": 109.38194273554,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Kemangkon",
+      "foto": "img/SMK Negeri 1 Kemangkon.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Kejobong",
+      "kecamatan": "Kejobong",
+      "lat": -7.405915541978467,
+      "lng": 109.45823527971632,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Kejobong",
+      "foto": "img/SMA Negeri 1 Kejobong.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Kejobong",
+      "kecamatan": "Kejobong",
+      "lat": -7.393981537960624,
+      "lng": 109.51544833553923,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Kejobong",
+      "foto": "img/SMK Negeri 1 Kejobong.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Kaligondang",
+      "kecamatan": "Kaligondang",
+      "lat": -7.381673993068925,
+      "lng": 109.42711733553897,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Kaligondang",
+      "foto": "img/SMK Negeri 1 Kaligondang.jpg"
+    },
+    {
+      "nama": "SMK Negeri Jateng Purbalingga",
+      "kecamatan": "Purbalingga",
+      "lat": -7.380673852717017,
+      "lng": 109.34876713553895,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+Jateng+Purbalingga",
+      "foto": "img/SMK Negeri Jateng di Purbalingga.jpg"
+    },
+    {
+      "nama": "MAN Purbalingga",
+      "kecamatan": "Purbalingga",
+      "lat": -7.396933234441468,
+      "lng": 109.37460772019769,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=MAN+Purbalingga",
+      "foto": "img/MAN Purbalingga.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Padamara",
+      "kecamatan": "Padamara",
+      "lat": -7.383187614666929,
+      "lng": 109.32257919499949,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Padamara",
+      "foto": "img/SMA Negeri 1 Padamara.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Kutasari",
+      "kecamatan": "Kutasari",
+      "lat": -7.339385428939019,
+      "lng": 109.30786022198683,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Kutasari",
+      "foto": "img/SMK Negeri 1 Kutasari.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Bojongsari",
+      "kecamatan": "Bojongsari",
+      "lat": -7.3550803248779095,
+      "lng": 109.35543640479845,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Bojongsari",
+      "foto": "img/SMK Negeri 1 Bojongsari.jpg"
+    },
+    {
+      "nama": "SMK Negeri 2 Purbalingga",
+      "kecamatan": "Mrebet",
+      "lat": -7.324347390749707,
+      "lng": 109.3574736121872,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+2+Purbalingga",
+      "foto": "img/SMK Negeri 2 Purbalingga.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Bobotsari",
+      "kecamatan": "Bobotsari",
+      "lat": -7.309161092698685,
+      "lng": 109.37429460664511,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Bobotsari",
+      "foto": "img/SMA Negeri 1 Bobotsari.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Karangreja",
+      "kecamatan": "Karangreja",
+      "lat": -7.223423018043764,
+      "lng": 109.33657205082044,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Karangreja",
+      "foto": "img/SMA Negeri 1 Karangreja.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Karanganyar",
+      "kecamatan": "Karanganyar",
+      "lat": -7.3032733837337895,
+      "lng": 109.3991253354804,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Karanganyar",
+      "foto": "img/SMK Negeri 1 Karanganyar.jpg"
+    },
+    {
+      "nama": "SMA Negeri 1 Rembang",
+      "kecamatan": "Rembang",
+      "lat": -7.3275473962373034,
+      "lng": 109.51161412177908,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMA+Negeri+1+Rembang",
+      "foto": "img/SMA Negeri 1 Rembang.jpg"
+    },
+    {
+      "nama": "SMK Negeri 1 Rembang",
+      "kecamatan": "Rembang",
+      "lat": -7.30334976711744,
+      "lng": 109.50733617743626,
+      "gmaps": "https://www.google.com/maps/search/?api=1&query=SMK+Negeri+1+Rembang",
+      "foto": "img/SMK Negeri 1 Rembang.jpg"
+    }
+  ],
+  "SMP": []
+}

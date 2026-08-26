@@ -1,0 +1,471 @@
+:root {
+    --black: #050505;
+    --white: #ffffff;
+    --gray-50: #f7f7f7;
+    --gray-100: #eeeeee;
+    --gray-200: #dedede;
+    --gray-500: #777777;
+    --gray-700: #333333;
+    --green: #20b56b;
+    --yellow: #f3c332;
+    --red: #e94b4b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--white);
+    color: var(--black);
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 92px 24px 70px;
+}
+
+.hero-inner {
+    width: min(880px, 100%);
+    text-align: center;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 54px;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.brand img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+h1 {
+    margin: 0 auto 28px;
+    max-width: 720px;
+    font-size: clamp(30px, 4.3vw, 52px);
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+}
+
+.search-wrap {
+    width: min(720px, 100%);
+    min-height: 76px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    border: 4px solid var(--black);
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--white);
+}
+
+#schoolType {
+    width: 174px;
+    min-width: 174px;
+    border: 0;
+    border-right: 4px solid var(--black);
+    padding: 0 15px;
+    outline: none;
+    background: var(--white);
+    color: var(--black);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#schoolType:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+#schoolType option:disabled {
+    color: #aaa;
+}
+
+#coordinateInput {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: none;
+    padding: 0 20px;
+    font-size: 17px;
+    color: var(--black);
+}
+
+#coordinateInput::placeholder {
+    color: #a1a1a1;
+}
+
+#searchButton {
+    width: 72px;
+    min-width: 72px;
+    border: 0;
+    border-left: 4px solid var(--black);
+    background: var(--black);
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: background 0.18s ease;
+}
+
+#searchButton:hover {
+    background: #252525;
+}
+
+#searchButton svg {
+    width: 28px;
+    height: 28px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.4;
+    stroke-linecap: round;
+}
+
+.hint {
+    margin: 12px 0 0;
+    font-size: 13px;
+    color: var(--gray-500);
+}
+
+.error {
+    min-height: 20px;
+    margin: 10px 0 0;
+    color: #c62828;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.results-section {
+    width: min(1050px, calc(100% - 40px));
+    margin: 0 auto 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.results-head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 14px;
+}
+
+
+.eyebrow {
+    margin: 0 0 6px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    color: var(--gray-500);
+}
+
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: -0.03em;
+}
+
+.result-count {
+    color: var(--gray-500);
+    font-size: 14px;
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 14px 0 22px;
+    font-size: 13px;
+    color: var(--gray-700);
+}
+
+
+.legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.dot.green {
+    background: var(--green);
+}
+
+.dot.yellow {
+    background: var(--yellow);
+}
+
+.dot.red {
+    background: var(--red);
+}
+
+.school-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.school-card {
+    display: grid;
+    grid-template-columns: 155px 1fr;
+    min-height: 180px;
+    border: 1px solid var(--gray-200);
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--white);
+    box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+}
+
+.school-photo {
+    position: relative;
+    min-height: 180px;
+    background: var(--gray-100);
+    overflow: hidden;
+}
+
+.school-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.photo-fallback {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 800;
+    color: #777;
+    background:
+        linear-gradient(
+            135deg,
+            #ededed 25%,
+            transparent 25%
+        )
+        -10px 0 / 20px 20px,
+        linear-gradient(
+            225deg,
+            #ededed 25%,
+            transparent 25%
+        )
+        -10px 0 / 20px 20px,
+        linear-gradient(
+            315deg,
+            #ededed 25%,
+            transparent 25%
+        )
+        0 0 / 20px 20px,
+        linear-gradient(
+            45deg,
+            #ededed 25%,
+            #f7f7f7 25%
+        )
+        0 0 / 20px 20px;
+}
+
+.status-lamp {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 14px;
+    height: 14px;
+    border: 3px solid rgba(255,255,255,0.9);
+    border-radius: 50%;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.28);
+}
+
+.status-lamp.green {
+    background: var(--green);
+}
+
+.status-lamp.yellow {
+    background: var(--yellow);
+}
+
+.status-lamp.red {
+    background: var(--red);
+}
+
+.school-info {
+    display: flex;
+    flex-direction: column;
+    padding: 19px 18px 16px;
+}
+
+.school-name {
+    margin: 0 0 6px;
+    font-size: 19px;
+    line-height: 1.18;
+}
+
+.school-district {
+    margin: 0;
+    color: var(--gray-500);
+    font-size: 13px;
+}
+
+.distance {
+    margin: 13px 0 0;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.school-actions {
+    margin-top: auto;
+    padding-top: 14px;
+}
+
+.view-school {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0 14px;
+    border-radius: 9px;
+    background: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.view-school:hover {
+    transform: translateY(-1px);
+    opacity: 0.86;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    padding: 40px;
+    border: 1px dashed var(--gray-200);
+    border-radius: 16px;
+    text-align: center;
+    color: var(--gray-500);
+}
+
+footer {
+    width: min(1050px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 0 0 35px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #999;
+    font-size: 11px;
+}
+
+code {
+    font-family:
+        Consolas,
+        monospace;
+}
+
+@media (max-width: 760px) {
+    .hero {
+        min-height: 500px;
+        padding: 58px 18px 50px;
+    }
+
+    .brand {
+        margin-bottom: 38px;
+    }
+
+    .search-wrap {
+        min-height: auto;
+        flex-wrap: wrap;
+        border-radius: 18px;
+    }
+
+    #schoolType {
+        width: 100%;
+        height: 52px;
+        border-right: 0;
+        border-bottom: 3px solid var(--black);
+    }
+
+    #coordinateInput {
+        height: 62px;
+        width: calc(100% - 66px);
+    }
+
+    #searchButton {
+        width: 66px;
+        min-width: 66px;
+        height: 62px;
+        border-left: 3px solid var(--black);
+    }
+
+    .school-list {
+        grid-template-columns: 1fr;
+    }
+
+    .school-card {
+        grid-template-columns: 135px 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 31px;
+    }
+
+    .school-card {
+        grid-template-columns: 1fr;
+    }
+
+    .school-photo,
+    .photo-fallback {
+        min-height: 170px;
+    }
+}
